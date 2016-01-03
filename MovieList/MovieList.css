@@ -1,1 +1,9 @@
 /* CSS declarations go here */
+
+#inputDescriptions {
+	border-style: solid;
+}
+
+#imageCarousel {
+	border-style: solid;
+}

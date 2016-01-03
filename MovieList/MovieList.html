@@ -1,14 +1,56 @@
 <head>
-  <title>MovieList</title>
+	<title>PersonalProject</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+	<h1 align="center">Test Title</h1>
+
+	<div class="container">
+		<div class="row">	
+			<div class="col-xs-6" id="inputDescriptions">
+				{{>movieName}}
+				{{>movieFormat}}
+				{{>releaseYear}}
+				{{>director}}
+			</div>
+	
+			<div class="col-xs-6" id="imageCarousel">
+				{{>carousel}}
+			</div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<!-- template for image carousel of movie images -->
+<template name="carousel">
+	<p>carousel<br><br><br>carousel<br><br>				   		<br>carousel<br><br><br></p>
 </template>
+
+<!-- template for input field to enter title of film to search for -->
+<template name="movieName">
+	<p>Movie Name<br></p>
+</template>
+
+<!-- template for input field to add a movie to the database -->
+<template name="movieFormat">
+	<p>Movie Format<br></p>
+</template>
+
+<!-- template for the display box that shows the description of the film -->
+<template name="releaseYear">
+	<p>Release Year<br></p>
+</template>
+
+<!-- template for the display box that shows the description of the film -->
+<template name="director">
+	<p>Director<br></p>
+</template>
+
+
